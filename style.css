@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Poppins:wght@700&display=swap');
+
+
+
+
+   *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+ }
+ html{
+    font-size: 62.5%;
+ }
+
+ body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+
+ }
+ header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100;
+ }
+.logo{
+    font-size: 3rem;
+    color: #623448;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease
+    ;
+
+ }
+ .logohover{
+    transform:scale(1.1) ;
+ }
+ nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease; 
+    border-bottom: 3px solid transparent;
+ }
+ nav a:hover 
+nav a.active{
+    color: #623448;
+    border-bottom: 3px solid white;
+}
+@media{max-width:995px;}
+nav{
+   position: absolute;
+   top: 100%;
+   right: 0;
+   width: 40%;
+   border-left: 3px solid #623448;
+   border-bottom: 3px solid #623448;
+   border-bottom-left-radius: 2rem;
+   padding: 1rem solid;
+   background-color:#161616 ;
+   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+}
+nav.active{
+   display: block;
+   font-size: 2rem;
+   margin: 3rem 0;
+}
+
+nav a:hover,
+nav a.active{
+   padding: 1rem;
+   border-radius: 0.5rem;
+   border-bottom: 0.5rem solid #623448
+}
+section{
+   min-height: 100vh;
+   padding: 5rem 9% 5rem;
+}
+   .home{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8rem;
+      background-color: #222222;
+   }
+   .home .home-content h1{
+      font-size: 6rem;
+      font-weight: 700;
+      font-height: 1.3;
+
+   }
+
+   span{
+      color: #623448 ;
+   }
+    .home .home-content h3{
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+     .home-img{
+      border-radius: 50%;
+     }
+      .home-img img{
+         position: relative;
+         width: 32vw;
+         border-radius: 50%;
+         display: block;
+         box-shadow: 0 0 25px solid #623448;
+         transition: 0.2s linear;
+      }
+        .home-img img:hover{
+         font-size: 1.8rem;
+         font-weight: 500;
+        }
+        .social-icons a{
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         width: 4rem;
+         height: 4rem;
+         background-color: transparent;
+         border: 0.2rem solid #623448;
+         font-size: 2rem;
+         border-radius: 50%;
+         margin: 3rem 1.5 rem 3rem ; 
+         transition: 0.3s ease;
+         padding: 10px 20 px;
+        }:
+        .social-icons a:hover{
+         color: black;
+         transform: scale(1.3) translateY(−5px);
+         background-color: #623448;
+         display: block;
+         box-shadow: 0 0 25px #623448;
+        }
+        .btn-Home{
+         background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;
+        }
+        .btn-Home:hover{
+         background-color: #DEDEDE;
+         color: #623448
+        }
+.btn-Services{
+   background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;
+        
+}
+ .btn-Services:hover{
+         background-color: #DEDEDE;
+         color: #623448
+         }
+
+
+         .btn-Skils{background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;
+
+         }
+          .btn-Skils:hover{
+              background-color: #DEDEDE;
+         color: #623448
+          }
+           .btn-Education{
+
+           
+            background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;}
+         .btn-Education:hover{background-color: #DEDEDE;
+         color: #623448
+         
+         .btn-Experience{
+         background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;}
+         }
+         .btn-Experience:hover{
+            background-color: #DEDEDE;
+         color: #623448
+         }
+ .btn-Contact{
+   background-color: transparent;
+         padding: 10px 20px;
+         border: 2px solid transparent;
+         color: white;
+         cursor: pointer;
+         transition: 0.3s;
+         text-decoration: none;
+ }
+ .btn-Contact:hover{ 
+   background-color: #DEDEDE;
+         color: #623448}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+   width: 10PX;
+}
+::-webkit-scrollbar-track{
+   background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+   background: #623448;
+   border-radius: 12px;
+   transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+   background: #623448;
+}
+/* navbar styling */
+nav{
+   width: 100%;
+   height: 10vh;
+}
+.nav-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content:space-around ;
+   align-items:center ;
+}
+.logo{
+   color: #623448;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.logo span{
+   color: #623448;
+   text-shadow: 0 0 10px #623448;
+   box-shadow: #623448;
+}
+.hamburg،
+.cancel {
+   cursor: pointer;
+   position: absolute;
+   right: 15px;
+   top: 10px;
+   color: white;
+   opacity: 0;
+}
+.glow {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: white;
+  text-shadow: 0 0 20px wheat, 0 0 40px #623448, 0 0 60px #623448;
+  animation: glow 1.5s infinite alternate;
+}
+
+.home-img {
+  width: 200px;
+  box-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+  transition: all 0.3s ease;
+}
+
+.home.img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fff, 0 0 40px #ff0, 0 0 60px #ff0;
+  filter: brightness(1.5);
+}
